@@ -149,16 +149,6 @@ export function productSchema(product: {
     image: product.image,
     brand: { '@type': 'Brand', name: product.brand ?? 'Търпов Груп' },
     category: product.category ?? 'Прозрачни LED дисплеи',
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'BGN',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        valueAddedTaxIncluded: true,
-      },
-      seller: { '@type': 'Organization', name: 'Търпов Груп' },
-    },
   };
 }
 
