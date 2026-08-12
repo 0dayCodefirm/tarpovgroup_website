@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-surface-white text-ink-primary font-body;
+    background-color: #FAFAFA;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: #FFFFFF;
+    border: 1px solid #E8ECF0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .glass-card-hover {
+    @apply glass-card;
+    transition: all 0.2s ease;
+  }
+
+  .glass-card-hover:hover {
+    border-color: rgba(0, 153, 204, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold text-sm tracking-wide transition-all duration-200;
+    background: linear-gradient(135deg, #1A3D7A 0%, #1565C0 100%);
+    color: #FFFFFF;
+    box-shadow: 0 4px 18px rgba(21, 101, 192, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #152E5E 0%, #1254A8 100%);
+    box-shadow: 0 6px 24px rgba(21, 101, 192, 0.42);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 2px solid #1565C0;
+    outline-offset: 2px;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold text-sm tracking-wide transition-all duration-200;
+    background: transparent;
+    color: #111418;
+    border: 1.5px solid #E8ECF0;
+  }
+
+  .btn-secondary:hover {
+    border-color: #1565C0;
+    color: #1565C0;
+    background: rgba(21, 101, 192, 0.04);
+  }
+
+  .eyebrow {
+    @apply text-xs font-heading font-semibold tracking-widest2 uppercase;
+    color: #0099CC;
+  }
+
+  .section-heading {
+    @apply font-heading font-bold text-ink-primary;
+    line-height: 1.15;
+  }
+
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #0099CC, transparent);
+  }
+
+  .cyan-dot {
+    @apply inline-block w-1.5 h-1.5 rounded-full;
+    background: #0099CC;
+  }
+
+  .spec-chip {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-heading font-semibold;
+    background: rgba(0, 153, 204, 0.08);
+    color: #0099CC;
+    border: 1px solid rgba(0, 153, 204, 0.18);
+  }
+
+  .nav-link {
+    @apply relative text-sm font-heading font-medium text-ink-secondary transition-colors duration-200 hover:text-ink-primary;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-px w-0 transition-all duration-300;
+    background: #0099CC;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link-active {
+    @apply text-ink-primary;
+  }
+
+  .nav-link-active::after {
+    @apply w-full;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-mesh {
+    background-color: #FAFAFA;
+    background-image:
+      radial-gradient(at 20% 20%, rgba(0, 153, 204, 0.06) 0px, transparent 50%),
+      radial-gradient(at 80% 80%, rgba(245, 158, 11, 0.04) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(16, 185, 129, 0.03) 0px, transparent 50%);
+  }
+
+  .bg-mesh-soft {
+    background-color: #F4F6F8;
+    background-image:
+      radial-gradient(at 30% 30%, rgba(0, 153, 204, 0.05) 0px, transparent 50%),
+      radial-gradient(at 70% 70%, rgba(124, 58, 237, 0.03) 0px, transparent 50%);
+  }
+
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, #0099CC 0%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 30px rgba(0, 153, 204, 0.15);
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.12);
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
