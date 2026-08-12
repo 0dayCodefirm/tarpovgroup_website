@@ -279,24 +279,6 @@ export default function Products() {
     keywords: 'прозрачен LED дисплей цена, P6.25, P3.91, P10, LED витрина, LED фасада, интериорен LED екран, outdoor LED пано, LED панели спецификации, transparent LED screen specs Bulgaria',
     jsonLd: [
       breadcrumbSchema([BREADCRUMB_HOME, { name: 'Продукти', path: '/products' }]),
-      productSchema({
-        name: 'P6.25 Фасаден Панел — Прозрачен LED дисплей',
-        description: 'Оптималният баланс между резолюция, прозрачност и цена. 90% прозрачност, 5 000 nit яркост, монтаж върху съществуващо стъкло. Идеален за витрини и фасади.',
-        image: 'https://tarpovgroup.com/images/6.25PixelPitch.png',
-        category: 'Прозрачни LED дисплеи',
-      }),
-      productSchema({
-        name: 'P3.91 Витринен Дисплей — Прозрачен LED',
-        description: 'Максимална детайлност за луксозни витрини. 85% прозрачност, 3 000 nit яркост. За бижутерии, козметика и модни магазини.',
-        image: 'https://tarpovgroup.com/images/3.91PixelPitch.png',
-        category: 'Прозрачни LED дисплеи',
-      }),
-      productSchema({
-        name: 'P10 Монументален Екран — Прозрачен LED',
-        description: '92% светлопропускливост, IP65 за открито. Идеален за монументални фасади и арена дисплеи.',
-        image: 'https://images.pexels.com/photos/12849349/pexels-photo-12849349.jpeg',
-        category: 'Прозрачни LED дисплеи',
-      }),
     ],
   });
 
