@@ -252,10 +252,10 @@ export default function Contacts() {
                   bg: 'bg-brand-emerald/10',
                  content: (
   <a
-    href="mailto:tarpovgroup@gmail.com"
+    href="mailto:info@tarpovgroup.com"
     className="font-heading font-semibold text-ink-primary hover:text-brand-emerald-dark transition-colors break-all"
   >
-    tarpovgroup@gmail.com
+    info@tarpovgroup.com
   </a>
 ),
                 },
