@@ -301,9 +301,9 @@ export default function Privacy() {
                   </h3>
                   <ul className="space-y-2.5">
                     <li>
-                      <a href="mailto:tarpovgroup@gmail.com" className="flex items-center gap-2 text-sm text-ink-secondary hover:text-brand-cyan-dark transition-colors">
+                      <a href="mailto:info@tarpovgroup.com" className="flex items-center gap-2 text-sm text-ink-secondary hover:text-brand-cyan-dark transition-colors">
                         <Mail size={15} className="text-brand-cyan-dark flex-shrink-0" />
-                        tarpovgroup@gmail.com
+                        info@tarpovgroup.com
                       </a>
                     </li>
                     <li>
@@ -348,7 +348,7 @@ export default function Privacy() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="mailto:tarpovgroup@gmail.com"
+                    href="mailto:info@tarpovgroup.com"
                     className="btn-primary"
                   >
                     <Mail size={16} />
