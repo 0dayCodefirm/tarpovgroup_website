@@ -147,13 +147,13 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:tarpovgroup@gmail.com"
+                  href="mailto:info@tarpovgroup.com"
                   className="flex items-center gap-2.5 text-sm text-ink-light hover:text-brand-cyan transition-colors duration-200 group"
                 >
                   <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-white/5 group-hover:bg-brand-cyan/10 transition-colors duration-200">
                     <Mail size={14} className="text-brand-cyan" />
                   </span>
-                  tarpovgroup@gmail.com
+                  info@tarpovgroup.com
                 </a>
               </li>
             </ul>
