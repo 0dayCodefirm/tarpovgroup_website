@@ -6,7 +6,6 @@ import ComparisonSection from '../components/home/ComparisonSection';
 import HowItWorks from '../components/home/HowItWorks';
 import EnergyEfficiency from '../components/home/EnergyEfficiency';
 import Showcase from '../components/home/Showcase';
-import Testimonials from '../components/home/Testimonials';
 import FAQ from '../components/home/FAQ';
 import FinalCTA from '../components/home/FinalCTA';
 import { usePageSeo, faqSchema } from '../components/shared/Seo';
@@ -40,7 +39,6 @@ export default function HomePage() {
         <HowItWorks />
         <EnergyEfficiency />
         <Showcase />
-        <Testimonials />
         <FAQ />
         <FinalCTA />
       </main>
