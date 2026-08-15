@@ -22,16 +22,13 @@ export default function CookieConsent() {
       role="dialog"
       aria-live="polite"
       aria-label="Съгласие за бисквитки"
-      className="fixed bottom-3 left-3 right-3 z-[100] mx-auto max-w-sm rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-lg sm:left-auto sm:right-4 sm:bottom-4 sm:max-w-xs"
+      className="fixed bottom-3 left-3 right-3 z-[100] mx-auto max-w-sm rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-lg sm:right-auto sm:left-4 sm:bottom-4 sm:max-w-xs"
     >
       <p className="text-xs leading-relaxed text-slate-600">
         Използваме бисквитки за анализ на трафика.{' '}
-          <a>
-            href="https://tarpovgroup.com/cookies"
-            className="font-medium text-[#1565C0] underline underline-offset-2 hover:text-[#0f4c9a]"
-        
-            Научете повече
-         </a>
+        <a href="https://tarpovgroup.com/cookies" className="font-medium text-[#1565C0] underline underline-offset-2 hover:text-[#0f4c9a]">
+          Научете повече
+        </a>
       </p>
       <div className="mt-3 flex gap-2">
         <button
