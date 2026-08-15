@@ -117,6 +117,7 @@ export default function Contacts() {
   function validate(): boolean {
     const errs: Partial<FormData> = {};
     if (!form.name.trim()) errs.name = 'Полето е задължително';
+    if (!form.company.trim()) errs.company = 'Полето е задължително';
     if (!form.phone.trim()) errs.phone = 'Полето е задължително';
     if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email))
       errs.email = 'Въведете валиден имейл';
@@ -344,15 +345,16 @@ export default function Contacts() {
                             {errors.name && <p className="text-xs text-red-500 mt-1">{errors.name}</p>}
                           </InputField>
 
-                          <InputField label="Компания">
+                          <InputField label="Компания" required>
                             <input
                               type="text"
                               name="company"
                               value={form.company}
                               onChange={handleChange}
                               placeholder="Примерна ЕООД"
-                              className={inputCls}
+                              className={`${inputCls} ${errors.company ? 'border-red-400 focus:border-red-400 focus:ring-red-400/20' : ''}`}
                             />
+                            {errors.company && <p className="text-xs text-red-500 mt-1">{errors.company}</p>}
                           </InputField>
                         </div>
 
