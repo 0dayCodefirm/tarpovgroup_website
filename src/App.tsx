@@ -10,6 +10,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Cookies from './pages/Cookies';
 import StickyActions from './components/shared/StickyActions';
+import CookieConsent from './components/shared/CookieConsent';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/cookies" element={<Cookies />} />
       </Routes>
       <StickyActions />
+      <CookieConsent />
     </>
   );
 }
