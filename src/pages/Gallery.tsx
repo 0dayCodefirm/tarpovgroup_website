@@ -18,6 +18,7 @@ interface MediaItem {
 // Client photos + LED transparent photo + 3 videos
 const MEDIA: MediaItem[] = [
   { id: 1, type: 'video', src: '/video_transparentLED.mp4' },
+  { id: 17, type: 'video', src: '/video_transparent0 (1).mp4' },
   { id: 13, type: 'video', src: '/gallery/factory_video.mp4' },
   { id: 8, type: 'video', src: '/video_transparent2.mp4' },
   { id: 4, type: 'video', src: '/video_transparentLED1.mp4' },
