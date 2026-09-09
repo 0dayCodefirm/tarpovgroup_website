@@ -421,8 +421,8 @@ export default function Hero() {
           >
             <div className="w-full" style={{ maxWidth: 560 }}>
               <VideoCard
-                src="/video_transparentLED.mp4"
-                badge="90% Прозрачност"
+                src="/video_transparent4.mp4"
+                badge="до 95% Прозрачност"
                 badgeColor="#10B981"
                 badgePos="tl"
                 delay={1.3}
@@ -431,8 +431,8 @@ export default function Hero() {
             <div className="w-full" style={{ maxWidth: 560 }}>
               <VideoCard
                 src="/video_transparentLED1.mp4"
-                badge="5 000 nit · IP43"
-                badgeColor="#0099CC"
+                badge="5 000 nit яркост · IP43"
+                badgeColor="#ccaa00"
                 badgePos="br"
                 delay={1.6}
               />
